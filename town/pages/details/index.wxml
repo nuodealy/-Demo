@@ -1,0 +1,16 @@
+<!--pages/details/index.wxml-->
+<view class='list'>
+  <block wx:for='{{distList}}' wx:key='this'>
+    <view class='list-contonent' bindtap='goList' data-id='{{item.id}}' data-typeid='{{item.typeid}}'>
+      <view>
+        <image src='{{item.pic}}'></image>
+      </view>
+      <view>
+        <image src='{{item.logo}}'></image>
+        <text wx:if='{{item.chinesename}}'>{{item.chinesename}}</text>
+        <text>{{item.brief}}</text>
+        <text>￥{{item.minprice}}</text>
+      </view>
+    </view>
+  </block>
+</view>

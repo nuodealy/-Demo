@@ -1,0 +1,22 @@
+<!--pages/list/index.wxml-->
+<view class='list'>
+  <block wx:for='{{list}}' wx:key='this'>
+    <view class='list-cont' bindtap='goList' data-id='{{item.id}}'>
+      
+      <view class='list-left'>
+        <image src='{{item.goodspics}}'></image>
+      </view>
+      <view class='list-right'>
+        <text>{{item.country}}直取{{item.bigname}}发货</text>
+        <text>{{item.title}}</text>
+        <view class='list-right-cont'>
+          <text>${{item.ourprice}}</text>
+          <text>8折</text>
+          <text>${{item.marketprice}}</text>
+        </view>
+      </view>
+    </view>
+    
+  </block>
+  
+</view>

@@ -1,0 +1,13 @@
+/* pages/cart/index.wxss */
+.car{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50% 0;
+  height: 120px;
+}
+.car image{
+  width: 40%;
+  height: 80px;
+}

@@ -1,0 +1,59 @@
+/* pages/classify/index.wxss */
+
+.classify-box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.classify-left{
+  text-align: center;
+  width: 25%;
+}
+
+.classify-text{
+  padding: .8rem .5rem;
+  border-bottom: 1px solid #ccc;
+  color: #939393;
+  background: #F5F5F5;
+}
+
+.classify-right{
+  position: fixed; 
+  top: 0;
+  right: 0;
+  flex: 99;
+  width: 74%;
+  height: 450px;
+  background: #fff;
+  box-sizing: border-box;
+  overflow: auto;
+  padding: .5rem 0;
+}
+
+.classify-right .classify-right-item{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.classify-right .classify-right-list{
+  width: 30%;
+  text-align: center;
+  height: 80px;
+  margin: 0 2px;
+  font-size: 10px;
+}
+
+.classify-right-list image{
+  width: 50px;
+  height: 30px;
+}
+
+.active{
+  background: #fff;
+}
+
+

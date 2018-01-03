@@ -1,0 +1,6 @@
+<!--pages/cart/index.wxml-->
+
+<view class='car'>
+  <image src='../../images/cart-null.png'></image>
+  <text>购物车空空如也~!</text>
+</view>

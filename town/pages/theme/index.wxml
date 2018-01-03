@@ -1,0 +1,6 @@
+<!--pages/theme/index.wxml-->
+<view>
+  <text>{{img.title}}</text>
+  <image src='{{img.goodspics}}'></image>
+  <text>{{img.reason}}</text>
+</view>

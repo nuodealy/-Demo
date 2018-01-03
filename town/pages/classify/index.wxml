@@ -1,0 +1,38 @@
+<!--pages/classify/index.wxml-->
+<view class='classify-box'>
+  <view class='classify-left'>
+    <block wx:for='{{dataList}}' wx:key='this'>
+      <view class="classify-text {{leftActive == item.id ? 'active' : '' }}" bindtap='check' data-id="{{item.id}}" data-index="{{index}}">
+        {{item.tree.desc == '秒杀特惠清仓' ? '秒杀清仓' : item.tree.desc}}
+    </view>
+    </block>
+  </view>
+
+  <view class='classify-right'>
+    <view wx:if="{{dataRight[cNav].tree.nodes[1].tree.nodes}}" class='classify-right-item'>
+      <block wx:for='{{dataRight[cNav].tree.nodes[1].tree.nodes}}' wx:key='this' >
+      <view class='classify-right-list' bindtap='goList' data-id='{{item.tree.id}}' data-typeid='{{dataRight[cNav].id}}'>
+        <view>
+          <block wx:if="{{item.tree.logo}}">
+            <image src="{{item.tree.logo}}"></image>
+          </block>
+          <block wx:else>
+            <image src="http://temp.im/50x30"></image>
+          </block>
+        </view>
+        <view wx:if="{{item.tree.desc}}">
+          <text>{{item.tree.desc}}</text>
+        </view>
+        <view wx:else>
+          <text>{{item.tree.desc2}}</text>
+        </view>
+      </view>
+        
+      </block>
+    </view>
+    <view wx:else>暂无数据</view>
+  </view>
+</view>
+
+
+

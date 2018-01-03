@@ -1,0 +1,37 @@
+/* pages/home/index.wxss */
+.theme-box{
+  margin: .5rem;
+  padding: 0 .5rem;
+  border-left: 4px solid yellow;
+}
+
+.theme-box-in{
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.theme-item{
+  width: 49%;
+  height: 220rpx;
+  margin: .1rem 0;
+}
+
+.theme-item>image{
+  width: 100%;
+  height: 100%;
+}
+
+.choice-box{
+  width: 99%;
+}
+
+.choice-box-item{
+  width: 100%;
+   /* border: 1px solid black;  */
+}
+
+.choice-box-item image{
+  width: 100%;
+}
